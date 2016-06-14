@@ -1,0 +1,135 @@
+body {
+	background-color: #465B73;
+	color: #465B73;
+	font-family: "Times New Roman", Times, serif;
+}
+
+h1 {
+	text-align: center;
+}
+
+.content {
+	background-image: url(images/background.jpg);
+	width: 100%;
+	height: auto;
+	background-color: #F5FBFF;
+	padding-top: 3%;
+	padding-bottom: 2%;
+	padding-left: 2%;
+	padding-right: 2%;
+	border-radius: 3px;
+	margin-top: 20px;
+}
+
+#intro {
+	font-size: 1.2em;
+	margin-top: 10px;
+}
+
+.divForm {
+    width: 100%;
+    font-size: 1.2em;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding-left: 10px;
+    padding-bottom: 10px;
+}
+
+.form {
+	width: 60%;
+	margin-right: auto;
+    margin-left: auto;
+}
+
+.form input {
+	width: 80%;
+	margin-top: 5px;
+	border: solid 1px #465B73;
+}
+
+.form textarea {
+	width: 80%;
+	border: solid 1px #465B73;
+}
+
+.buttons {
+	background-color: #465B73;
+	border: solid 1px white;
+	color: white;
+}
+
+#footer {
+	background-image: url(images/background.jpg);
+	width: 100%;
+	height: auto;
+	background-color: #F5FBFF;
+	border-radius: 3px;
+	text-align: left;
+	padding-left: 2%;
+	padding-right: 2%;
+	padding-top: 1%;
+	padding-bottom: 1%;
+	margin-top: 20px;
+	border: solid 1px white;
+	color: #465B73;
+}
+
+a, a:hover, a:focus {
+	color: #465B73;
+}
+
+.navbar-default {
+	background-image: url(images/background.jpg);
+	background-color: #DADCCF;
+	border-color: white;
+}
+
+.navbar-default .navbar-brand {
+    color: #465B73;
+}
+
+.navbar-default .navbar-brand:hover,
+.navbar-default .navbar-brand:focus {
+    color: #465B73;
+}
+
+.navbar-default .navbar-nav > li > a {
+    color: #465B73;
+}
+
+.navbar-default .navbar-nav > li > a:hover,
+.navbar-default .navbar-nav > li > a:focus {
+    color: #465B73;
+}
+
+.navbar-default .navbar-nav > .active > a, 
+.navbar-default .navbar-nav > .active > a:hover, 
+.navbar-default .navbar-nav > .active > a:focus {
+    color: #465B73;
+    background-color: #DADCCF;
+}
+
+.navbar-default .navbar-nav > .open > a, 
+.navbar-default .navbar-nav > .open > a:hover, 
+.navbar-default .navbar-nav > .open > a:focus {
+    color: #465B73;
+    background-color: #DADCCF;
+}
+
+.carousel-inner > .item > img,
+  .carousel-inner > .item > a > img {
+      width: 70%;
+      margin: auto;
+}
+
+#table {
+	width: 90%;
+}
+
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+th, td {
+    padding: 5px;
+}

@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Met Hotels</title>
+		<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+		 <script type="text/javascript" charset="utf8" src="http://ajax.aspnetcdn.com/ajax/jquery.dataTables/1.9.4/jquery.dataTables.min.js"></script>
+		<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+		<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+		<script type="text/javascript" src="javaScript.js"></script>
+		<link rel="stylesheet" type="text/css" href="http://ajax.aspnetcdn.com/ajax/jquery.dataTables/1.9.4/css/jquery.dataTables.css">
+		<link rel="stylesheet" type="text/css" href="style.css">
+		<meta charset="utf-8"> 
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+	</head>
+	<body ng-app="myApp" ng-controller="myCtrl">
+		<div class="container">
+  			<nav class="navbar navbar-default">
+			  <div class="container-fluid">
+			    <div class="navbar-header">
+			      <a class="navbar-brand" href="#">{{ title }}</a>
+			    </div>
+			    <ul class="nav navbar-nav">
+			      <li class="active"><a href="#">Početna strana</a></li>
+			      <li><a href="#about">{{ about }}</a></li>
+			      <li><a href="#addRoom"> {{ addRoom }}</a></li>
+			      <li><a href="#reservation">{{ reservation }}</a></li>
+			      <li><a href="#contact">{{ registration }}</a></li> 
+			      <li><a href="#modal" data-toggle="modal">{{ login }}</a></li>
+			    </ul>
+			  </div>
+			</nav>
+
+			<div class="content">
+				<h1>{{ contentTitle }}</h1>
+				<div id="myCarousel" class="carousel slide" data-ride="carousel">
+					<ol class="carousel-indicators">
+						<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+						<li data-target="#myCarousel" data-slide-to="1"></li>
+						<li data-target="#myCarousel" data-slide-to="2"></li>
+						<li data-target="#myCarousel" data-slide-to="3"></li>
+						<li data-target="#myCarousel" data-slide-to="4"></li>
+						<li data-target="#myCarousel" data-slide-to="5"></li>
+					</ol>
+
+					<div class="carousel-inner" role="listbox">
+						<div class="item active">
+							<img src="images/hotel.jpg" alt="Met Hotels" width="460" height="345">
+						</div>
+						<div class="item">
+							<img src="images/hotel1.jpg" alt="Met Hotels" width="460" height="345">
+						</div>
+						<div class="item">
+							<img src="images/hotel2.jpg" alt="Met Hotels" width="460" height="345">
+						</div>
+						<div class="item">
+							<img src="images/hotel3.jpg" alt="Met Hotels" width="460" height="345">
+						</div>
+						<div class="item">
+							<img src="images/hotel4.jpg" alt="Met Hotels" width="460" height="345">
+						</div>
+						<div class="item">
+							<img src="images/hotel5.jpg" alt="Met Hotels" width="460" height="345">
+						</div>
+					</div>
+
+					<a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+						<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+						<span class="sr-only">Prethodna</span>
+					</a>
+					<a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+						<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+						<span class="sr-only">Sledeća</span>
+					</a>
+				</div>
+				
+				<div id="about">
+					<h2>{{ aboutTitle }}</h2>
+					<p id="intro">Hotel "Met Hotels" nudi udoban smeštaj u sobama i apartmanima na samoj obali mora u Budvi, veliki izbor jela primorske i kontinentalne kuhinje, sopstveni parking i transfer od i do aerodroma ili autobuske stanice.<br><br>Wi-Fi je besplatan na terasi hotela, gde ćete uz prvu jutarnju kafu, sigurni smo, uživati u privilegiji pogleda na čisto, azurno Jadransko more.<br><br>Domaćini i ljubazno, kvalifikovano osoblje će vam svakodnevno biti na usluzi, a vaše je samo da se opustite i uživate, jer „Lepo je ono što je skladno“, rekao je Aristotel, a na posedu hotela, sklad je upravo reč koja najbolje opisuje harmoniju prirode i ljudi koji će vam posvetiti svoje vreme i znanje.<br><br>Hotel “Met Hotels”, kategorisan sa tri zvezdice, smešten je na jednoj od najlepših crnogorskih plaža– plaži Jaz u Budvi, Crna Gora.<br><br>Smeštaj hotela je prilagodjen porodicama sa decom, ali je idealan izbor i za romantične parove željne pravog mira i odmora pored mora. Hotel raspolaže dvokrevetnim, trokrevetnim, četvorokrevetnim i petokrevetnim sobama i apartmanima. Apartmani su dvosobni i sastoje se iz dve dvokrevetne sobe ili iz jedne dvokrevetne i jedne trokrevetne sobe.Sobe i apartmani su prostrani, klimatizovani, sa terasama koje imaju pogled na more. Svaka soba i apartman ima sopstveno kupatilo, frižider, sef, satelitsku LCD TV. Većina soba i svi apartmani imaju mini kuhinju.<br><br>Čišćenje soba i apartmana, menjanje peškira i posteljine su deo svakodnevnih usluga. Smeštaj soba i apartmana je udoban i zadovoljiće sve Vaše potrebe.<br><br>Gostima hotela "Met Hotels" stoji na raspolaganju hotelska plaža ispred hotela. Plaža Hotela je posebno pogodna za mališane, jer je šljunak pokriven mekanim podlogama, koje se ne zagrevaju ni tokom najviših temperatura. Ulazak u more je siguran, a voda čista i prozirna.<br><br>Kafa, sok, doručak ili koktel dok opušteno odmarate u udobnim ležaljkama i posmatrate igru vaše dece- izbor je na vama!<br><br>Na plaži hotela na Jazu možete iznajmiti pedaline, kajake i skutere, ali i vezati sopstvenu barku.<br><br>O vašoj sigurnosti sve vreme brinuće profesionalni spasioci sa licencom.</p>
+				</div>
+
+				<div id="addRoom">
+					<h2>{{ addRoomTitle }}</h2>
+					<form class="form" action="addRoom.php" method="POST">
+						<label>Uneste broj sobe:</label><br>
+						<input type="text" placeholder="Broj sobe" name="number"><br>
+						<label>Unesite broj kreveta:</label><br>
+						<input type="text" placeholder="Broj kreveta" name="beds"><br>
+						<label>Unesite kvadraturu sobe:</label><br>
+						<input type="text" placeholder="Kvadratura" name="size"><br>
+						<label>Unesite kratak opis sobe:</label><br>
+						<input type="text" placeholder="Opis" name="description"><br>
+						<input type="submit" class="buttons" value="Kreiraj sobu"><br>
+					</form>
+				</div>
+
+				<div>
+					<h2>{{ changeRoomTitle }} </h2>
+					<form class="form" action="changeRoom.php" method="POST">
+						<label>Izmenite broj sobe:</label><br>
+						<input type="text" value=" {{ roomNum }}" name="number"><br>
+						<label>Izmenite broj kreveta:</label><br>
+						<input type="text" value=" {{ bedNum }}" name="beds"><br>
+						<label>Izmenite kvadraturu sobe:</label><br>
+						<input type="text" value=" {{ size }}" name="size"><br>
+						<label>Izmenite kratak opis sobe:</label><br>
+						<input type="text" value=" {{ desc }}" name="description"><br>
+						<input type="submit" class="buttons" value="Kreiraj sobu"><br>
+					</form>
+				</div>
+
+
+				<div id="reservation" class="divForm">
+					<h2>{{ reservationTitle }}</h2>
+					<p>Kako biste proverili dostupnost smeštaja u našem hotelu, molimo Vas  da popunite formu i naša služba če Vas kontaktirati i obezbediti Vam kvalitetan odmoru nekoj od ponudjenih sobi u "Met Hotels"-u.</p>
+					<table id="table">
+					  <tr>
+					    <th>Tip smeštaja</th>
+					    <th>Maksimalni kapacitet</th> 
+					    <th>Cena po noćenju</th>
+					  </tr>
+					  <tr>
+					    <td>Jednokrevetna soba</td>
+					    <td>1</td> 
+					    <td>1150</td>
+					  </tr>
+					  <tr>
+					    <td>Dvokrevetna soba</td>
+					    <td>2</td> 
+					    <td>1550</td>
+					  </tr>
+					  <tr>
+					    <td>Trokrevetna soba</td>
+					    <td>3</td> 
+					    <td>2100</td>
+					  </tr>
+					  <tr>
+					    <td>Četvorokrevetni apartman</td>
+					    <td>4</td> 
+					    <td>2650</td>
+					  </tr>
+					</table>
+					<form class="form">
+						<label>Uneste datum dolaska:</label><br>
+						<input type="date" placeholder="Datum dolaska"><br>
+						<label>Unesite datum odlaska:</label><br>
+						<input type="date" placeholder="Datum odlaska"><br>
+						<label>Unesite broj odraslih:</label><br>
+						<input type="text" placeholder="Broj odraslih"><br>
+						<label>Unesite broj dece:</label><br>
+						<input type="text" palceholder="Broj dece"><br>
+						<label>Unesite vaše ime:</label><br>
+						<input type="text" placeholder="Ime"><br>
+						<label>Unesite vašu e-mail adresu:</label><br>
+						<input type="text" placeholder="E-mail adresa"><br>
+						<input type="submit" class="buttons" value="Proveri dostupnost smeštaja" ng-click="reserve()"><br>
+					</form>
+				</div>
+
+				<div id="contact" class="divForm">
+					<h2>{{ registrationTitle }}</h2>
+					<p>Registrujte se na sajt popunjavanjem sledeće forme </p>
+					<form class="form" action="function.php" method="POST">
+						<label>Unesite vaše ime:</label><br>
+						<input type="text" placeholder="Ime" name="name"><br>
+						<label>Unesite vaše prezime:</label><br>
+						<input type="text" placeholder="Prezime" name="surname"><br>
+						<label>Unesite vašu e-mail adresu:</label><br>
+						<input type="text" placeholder="E-mail adresa" name="email"><br>
+						<label>Unesite korisničko ime:</label><br>
+						<input type="text" placeholder="Korisničko ime" name="username"><br>
+						<label>Unesite šifru:</label><br>
+						<input type="password" placeholder="Šifra" name="password"><br>
+						<input type="submit" class="buttons" value="Registrujte se"><br>
+					</form>
+				</div>
+			</div>
+			<div id="footer">
+				Copyright 2016 Met Hotels
+			</div>
+		</div>
+
+		<div class="modal fade" id="modal" role="dialog">
+			<div class="modal-dialog">    
+			    <div class="modal-content">
+			        <div class="modal-header">
+			          <button type="button" class="close" data-dismiss="modal">&times;</button>
+			          <h4 class="modal-title">Prijava</h4>
+			        </div>
+			        <div class="modal-body">
+				        <form action="login.php" method="POST">
+				        	<label>Unesite vaše korisničko ime:</label><br>
+							<input type="text" placeholder="Korisničko ime" name="logUsername"><br>
+							<label>Unesite vašu šifru:</label><br>
+							<input type="password" placeholder="Šifra" name="logPassword"><br>
+							<input type="submit" class="buttons" value="Prijavite se" name="submit"><br>
+						</form>
+			        </div>
+			    </div>
+    		</div>
+  		</div>
+	</body>
+</html>
